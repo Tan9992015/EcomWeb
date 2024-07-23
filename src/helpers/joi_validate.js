@@ -1,0 +1,12 @@
+import joi from 'joi'
+export const email = joi.string().pattern(new RegExp('@gmail.com$')).required()
+export const password = joi.string().required()
+export const confirmPassword = joi.string().required()
+export const phone = joi.string().required()
+export const name= joi.string().required()
+export const image= joi.string().required()
+export const type= joi.string().required()
+export const countInStock= joi.number().required()
+export const rating= joi.number().required()
+export const price= joi.number().required()
+export const description= joi.string().required()
